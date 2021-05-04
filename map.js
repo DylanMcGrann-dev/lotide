@@ -8,7 +8,7 @@ const assertArrayEqual = require('./assertArraysEqual');
 // const test2Check = [ 4, 4, 1, 3, 5 ];
 
 // const test3Check = ['n', 'r', undefined, 'r', undefined];
-// const words = ["ground", "control", "to", "major", "tom"];
+const words = ["ground", "control", "to", "major", "tom"];
 
 const map = function(array, callback) {
   const results = [];
@@ -31,6 +31,6 @@ module.exports = map;
 //assertArrayEqual(test1,test1Check);
 
 
-//const results1 = map(words, word => word[0]);
-//console.log(results1);
+const results1 = map(words, word => word[0]);
+console.log(results1);
 

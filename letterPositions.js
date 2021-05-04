@@ -11,13 +11,7 @@ const eqArrays = function(array1,array2) {
   
 };
 
-const assertArrayEqual = function(arrayA, arrayB) {
-  if (eqArrays(arrayA, arrayB)) { // if returns true
-    console.log('Assertion pass');
-  } else {
-    console.log('Assertion fail');
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 
 const letterPositions = function(sentence) {
@@ -34,5 +28,6 @@ const letterPositions = function(sentence) {
   // logic to update results here
   return results;
 };
+module.exports = letterPositions;
 console.log(letterPositions('hello'));
-assertArrayEqual(letterPositions("hello").o, [4]);
+assertArraysEqual(letterPositions("hello").o, [4]);

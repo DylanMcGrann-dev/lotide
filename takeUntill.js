@@ -20,7 +20,7 @@
 //   }
 // };
 
-const takeUntil = function(array, callback) {
+const takeUntill = function(array, callback) {
   let arr = [];
   for (const element of array) {
     if (callback(element)) {
@@ -29,7 +29,7 @@ const takeUntil = function(array, callback) {
     arr.push(element);
   }
 };
-module.exports = takeUntil;
+module.exports = takeUntill;
 
 // const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 // const expected = [ 1, 2, 5, 7, 2 ];
